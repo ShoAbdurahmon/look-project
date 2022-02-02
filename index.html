@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Lobster&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>LOOK ORDER</title>
+</head>
+<body>
+	<div class="container">
+
+		<!-- Navigatoin View -->
+		<div class="navbar">
+			<div class="navbar-top">
+				<a href="#">
+					<img src="./img/logo.svg" alt="logo" height="50">
+				</a>
+			</div>
+
+			<!-- Users -->
+			<div class="navbar-main">
+				<ul class="customers-list">
+					<!-- mock user. buni keyin o'chirib tashlang -->
+					<!-- <li class="customer-item">
+						<span class="customer-name">Sobir</span>
+						<a class="customer-phone" href="tel:+998941049914">+998941049914</a>
+					</li> -->
+
+				</ul>
+			</div>
+
+			<!-- Adding User -->
+			<div class="navbar-footer">
+				<form id="userAdd">
+					<input id="usernameInput" type="text" placeholder="username..." required>
+					<input id="telephoneInput" type="tel" placeholder="telephone..." required>
+					<button class='adding_customer' type="submit">
+						<img src="https://img.icons8.com/pastel-glyph/64/000000/add-user-male--v2.png" alt="plus-icon">
+					</button>
+				</form>
+			</div>
+		</div>
+
+
+
+
+
+
+		<!-- Main View -->
+		<div class="main">
+
+			<!-- User Data -->
+			<div class="main-headers">
+				<div class="cutomer-id-wrapper">
+					<span>client id:</span>
+					<span id="clientId"></span>
+				</div>
+				<h1 id="userHeader" class="customer-name">Select Costumer</h1>
+			</div>
+
+			<!-- User Buyurtmalari -->
+			<div class="main-orders">
+				<ul class="orders-list">
+					<!-- mock order. Keyin o'chirib tashlang -->
+
+				</ul>
+			</div> 
+
+			<!-- Zakaaz berish -->
+			<div class="main-footer">
+				<form id="foodsForm">
+					<select id="foodsSelect">
+						<!-- mock food. keyin o'chirib tashlang -->
+						<option value="1">Cola</option>
+						<option value="2">Fanta</option>
+						<option value="3">Cheese Burger</option>
+						<option value="4">Chicken togora</option>
+						<option value="5">Chicken Wings</option>
+						<option value="6">Combo</option>
+						<option value="7">Spinner</option>
+					</select>
+					<input id="foodsCount" type="number" placeholder="count" required>
+					<button type="submit">
+						<img src="https://img.icons8.com/plasticine/100/000000/plus-math.png" alt="plus-button" height="35">
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="./js/look.js"></script>
+</body>
+</html>
